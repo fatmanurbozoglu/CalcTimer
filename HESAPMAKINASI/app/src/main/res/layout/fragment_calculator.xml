@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111"
+    tools:context=".CalculatorFragment">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonClear"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_span="1"
+                android:layout_weight="1"
+                android:background="@drawable/button_calculator_grey"
+                android:text="C" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPlusMinus"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_calculator_grey"
+                android:text="+/-" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMod"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_calculator_grey"
+                android:text="%" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDiv"
+                style="@style/Theme.HESAPMAKINASI.buttonOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button7"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button8"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button9"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMul"
+                style="@style/Theme.HESAPMAKINASI.buttonOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button4"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button5"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button6"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="6" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSub"
+                style="@style/Theme.HESAPMAKINASI.buttonOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button1"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSum"
+                style="@style/Theme.HESAPMAKINASI.buttonOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button0"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+
+                android:text="0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonVirgule"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+
+                android:text="," />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPow"
+                style="@style/Theme.HESAPMAKINASI.button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+
+                android:text="^" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonEqual"
+                style="@style/Theme.HESAPMAKINASI.buttonOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+
+                android:text="=" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCalculator"
+        android:layout_width="408dp"
+        android:layout_height="94dp"
+
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="1dp"
+        android:paddingStart="24dp"
+        android:paddingTop="38dp"
+        android:paddingEnd="24dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="376dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="textEnd"
+        android:textColor="#ECE3E3"
+        android:textColorHint="#888585"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

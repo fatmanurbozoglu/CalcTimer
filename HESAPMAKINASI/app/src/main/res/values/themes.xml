@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HESAPMAKINASI" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+       name="AppTheme" parent="Theme.AppCompat.Light">
+            <!-- Diğer tema ayarları -->
+            <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.HESAPMAKINASI" parent="Base.Theme.HESAPMAKINASI" />
+    <style name="Theme.HESAPMAKINASI.button" parent="ThemeOverlay.Material3.Button.TextButton" >
+        <item name="android:background">@drawable/buttonkenarlik</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+
+    <style name="Theme.HESAPMAKINASI.buttonOrange" parent="Theme.HESAPMAKINASI.button" >
+        <item name="android:background">@drawable/button_calculator_orange</item>
+    </style>
+</resources>
